@@ -1,0 +1,1288 @@
+PYTHON NOTES
+
+**Variables**
+
+import random
+
+x = 4
+print(x)
+
+x = "John"
+print(x)
+
+a = str(3)
+b = int(3)
+c = float(3)
+print(a)
+print(b)
+print(c)
+
+x, y, z = "abc", "def", "ghi"
+print(x)
+print(y)
+print(z)
+
+x = y = z = "John"
+print(x)
+print(y)
+print(z)
+
+fruits = ["apple", "berry", "orange"]
+x, y, z = fruits
+print(x)
+print(y)
+print(z)
+
+y = 2.0
+print(type(x))
+print(type(y))
+print(random.randrange(1,11))
+
+----------------------------------------
+**KEY WORDS**
+
+print ('Hello')
+print ("Hello")
+a = "Hello"
+print(a)
+a = """Hello
+World
+!!!"""
+print(a)
+b= "Hello World !!!"
+print (b[6:11])
+print(b[:6])
+print(b[6:])
+print(b[-9:-4])
+print (b[6:11:2])
+print(b[5::-1])
+print (b.upper())
+print(b.lower())
+print (b.split(" "))
+print(b.replace("H","J"))
+c = b.split(" ")[0] + " " + b.split(" ")[2]
+print(c)
+c =10
+d = "My age is" +str(c)
+print (d)
+d = "My age is {}"
+print (d)
+print (d.format(c))
+a = "Hello"
+print (d.format(c) + " " + a)
+print (d.format(c,a,"World"))
+txt = "he said \n\"Hey\"\t\\"
+print(txt)
+print(txt.capitalize())
+print(txt.casefold())
+print(b.center(100,"."))
+print (b.count('1',0,5))
+print (b.endswith("!!!"))
+print (b.endswith("o",0,5))
+print (b.find("World"))
+
+b = "Hello World !!! Hello"
+print (b.find("Hello",1))
+print(b.find("Hello",1,15))
+print (b.index("Hello"))
+txt = "Apples are {price} rupees"
+print (txt.format(price = 100))
+txt = "Apples are {price1} rupees and oranges are {price2} rupees"
+print (txt.format(price2 =30, price1 = 100))
+d = "Myageis50"
+print(b.isalnum()) #alphanumeric 
+print(a.isalnum())
+print(d.isalnum())
+print(d.isalpha())
+print(a.isalpha())
+print(d.isascii())
+e = "0987654321"
+print(e.isdecimal())
+print(e.isdigit())
+print(e.isnumeric())
+a = "hello world"
+print (a.islower())
+
+txt = "     "
+x = txt.isspace()
+print (x)
+txt = "HELLO WORLD"
+x = txt.isupper()
+print(x)
+x = txt.lower()
+print(x)
+y=x.upper()
+print(y)
+x = txt.replace("HELLO","GOOD DAY")
+print(x)
+txt = "a b c d e a b c d"
+x = txt.replace(" ",",",3)
+print(x)
+txt = "Good Morning India"
+x = txt.split(" ")
+print (x[0] + " " + x[1])
+txt = "I like music\n I like movies"
+txt1 = """I like music
+I like movies"""
+print(txt)
+x = txt.splitlines()
+print(x)
+x = txt1.splitlines()
+print(x)
+x=txt.startswith("I li")
+print(x)
+txt="         Hello World              " 
+print(txt.strip(" "))
+txt=txt.strip(" ")
+print(txt)
+x = txt.swapcase()
+print(x)
+
+---------------
+**OPERATORS AND DATA TYPES**
+
+print(10>9)
+print(10==9)
+print(10<9)
+a=5
+b=10
+if b>a:
+     print("b is greater tha a")
+else:
+     print("b is lesser than a")
+print(bool("Hello"))
+print(bool(None))
+print(bool(3))
+print(bool(""))
+print(bool(0))
+print(bool([]))
+print(bool(()))
+print(bool({}))
+print(10+5)
+print("10"+"5")
+print(10-5)
+print(10*5)
+print(11/5)
+print(11//5)
+print(2**7)
+print(11%5)
+x=10
+print(x)
+x+=5
+print(x)
+x-=5
+print(x)
+x*=3
+print(x)
+x/=10
+print(x)
+x *=5
+print(x)
+x%=6
+print(x)
+x **=3
+print(x)
+x //=5
+print(x)
+a = ["apples",50,"orange"]
+print(a)
+print(len(a))
+b = list(("a","b","c"))
+print(b)
+print(type(b))
+
+a = ["apple",50,"orange","blue","grapes"]
+print(a)
+print(len(a))
+b=list(("a","b","c"))
+print(b)
+print(type(b))
+print(a[0])
+print(a[1])
+print(a[2])
+print()
+print(a[-1])
+print(a[-2])
+print(a[-3])
+print(a[1:3])
+print(a[:3])
+print(a[2:])
+print(a[-2:4])
+print(a[4:-2])
+print(a[-2:-4:-1])
+if "orange" in a:
+    print("yes, 'orange' is in the list")
+a[1] = "banana"
+print(a)
+a[2:4] = ["berry", "watermelon"]
+print(a)
+a[2:3] = ["peach","carrot"]
+print(a)
+a.append("tomato")
+print(a)
+a.insert(1, "dragon fruit")
+print(a)
+a.extend(b)
+print(a)
+a.remove("a")
+print(a)
+a.pop(8)
+print(a)
+a.pop()
+print(a)
+print(b)
+del b
+b=list(("a","b","c"))
+print(b)
+b.clear()
+print(b)
+----------------
+**LOOPS**
+
+for item in a:
+    print(item)
+print()
+for i in range(len(a)):
+    print(a[i])
+
+a = ["apple","banana","orange","blue","grapes"]
+b=list(("a","b","c"))
+i=0
+while i< len(a):
+    print(a[i])
+    i +=1
+print ("--------------------------")
+[print(x) for x in a]
+print ("--------------------------")
+newlist = []
+for x in a:
+    if "a" in x:
+        newlist.append(x)
+print(newlist)
+print("------------------------------")
+newlist1 = [x for x in a if "a" in x]
+print(newlist1)
+newlist1 = [x for x in a if x != "apple"]
+print(newlist1)
+newlist1 = [x for x in a]
+print(newlist1)
+newlist1 = [x for x in range(10)]
+print(newlist1)
+newlist1 = [x for x in range(1,10) if x<7]
+print(newlist1)
+newlist1 = [x.upper() for x in a]
+print(newlist1)
+newlist1 = ['hello' for x in range(5)]
+print(newlist1)
+newlist1 = [x if x != "grapes" else "onion" for x in a]
+print (newlist1)
+print(a)
+b= a.sort()
+print(b)
+b=a
+print(b)
+b=a.copy()
+print(b)
+b = list(a)
+print(b)
+c = a + b
+print(c)
+print (type(a))
+print (type(b))
+print (type(c))
+for x in a:
+    b.append(x)
+print(b)
+x = b.count("apple")
+print(x)
+b.extend(a)
+print(b)
+#print(a.reverse())
+print()
+d = [1,2,3,4,5,6]
+print(d[::-1])
+print(a)
+print(a[::-1])
+
+#Problem: Find the largest number from the list
+a = [10,20,30,40,50,60]
+max = a[0]
+i=0
+for i in a:
+    if i > max:
+        max = i
+print("largest number is:",max)
+---------------------------------------------
+#TUPLES**
+
+tuple1 = ("apple", "banana", "cherry")
+tuple2 = ("onion", "tomato", "bean")
+print(tuple1)
+print(type(tuple1))
+print(len(tuple1))
+temptuple = tuple(("apple", "banana", "cherry"))
+print(temptuple)
+print(type(temptuple))
+print(temptuple[0])
+
+#updating a tuple
+temp = list(temptuple)
+temp.append("orange")
+temp.append("grapes")
+temptuple = tuple(temp)
+print(temptuple)
+print(type(temptuple))
+(a,b,c,d,e)=temptuple
+print(a +" "+b+" "+c+" "+d+" "+e)
+(a,b,*c)=temptuple
+print(a +" "+b)
+print(c)
+for x in temptuple:
+    print(x)
+print("-------------------------------")
+for x in range(len(temptuple)):
+    print(temptuple[x])
+print("-------------------------------")
+x=0
+while x < len(temptuple):
+    print(temptuple[x])
+    x+=1
+tuple3 = tuple1+tuple2
+print(tuple3)
+tuple4 = tuple1 *3
+print(tuple4)
+print(tuple4.count("apple"))
+print(tuple4.index("cherry"))
+
+
+#Problem: Given a tuple,find freq of each element
+#sol1
+a= (1,1,2,3,3,3,3,4,4,5)
+freq = []
+for i in a:
+    found = False
+    for j in freq:
+        if j[0] == i:
+            j[1] +=1
+            found = True
+            break
+    if not found:
+        freq.append([i,1])
+for i, count in freq:
+    print("num", i)
+    print("freq",count)
+
+#sol2
+tup = (4, 5, 4, 5, 6, 6, 5, 5, 4)
+freq_dict = {}
+for elem in tup:
+    if elem in freq_dict:
+        freq_dict[elem] += 1
+    else:
+        freq_dict[elem] = 1
+print("Tuple elements frequency is : " + str(freq_dict))
+-------------------------------------------------------------
+#SETS**
+
+set1 = {"apple","banana","cherry","apple",1,True, False, 0}
+tempset = {2,3,4,5,6,7,8,9}
+templist = ["abc","def","ghi"]
+print(set1)
+print(type(set1))
+print(len(set1))
+for x in set1:
+    print(x)
+set1.add("Orange")
+print(set1)
+set1.update(tempset)
+print(set1)
+set1.update(templist)
+print(set1)
+set1.remove("abc")
+print(set1)
+set1.discard("def")
+print(set1)
+set1.pop()
+print(set1)
+tempset.clear()
+print(tempset)
+del tempset
+tempset = {2,3,4,5,6,7,8,9}
+set2 = set1.union(tempset)
+print(set2)
+set1 = {"apples", "banana","cherry","apple",1,True,False,0}
+tempset={0,1,2,3,4,5,6,7,8,9}
+a=set1.difference(tempset)
+print(a)
+#set1.difference_update(tempset)
+#print(set1)
+set1.intersection_update(tempset)
+print(set1)
+
+#Problem: given 2 lists,find additional and missing values in each
+a = [1,2,3,4,5,6]
+b = [4,5,6,7,8]
+
+print("Missing in list1", set(b).difference(a))
+print("Additional in list1", set(a).difference(b))
+print("Missing in list2",set(a).difference(b))
+print("additional in list2",set(b).difference(a))
+-------------------------------------------------------------------
+#dictionary**
+
+dict1 = {"brand":"Apple","model":"Macbook","year":2023}
+print(dict1)
+print(dict1["brand"])
+print(dict1.get("brand"))
+print(dict1.keys())
+dict1["colour"] = "grey"
+print(dict1)
+print(dict1.values())
+print(dict1.items())
+if "year" in dict1:
+    print("Year key present in dictionary")
+dict1.update({"colour" : "black"})
+print(dict1)
+dict1.pop("year")
+print(dict1)
+dict1.popitem()
+print(dict1)
+del dict1["model"]
+print(dict1)
+dict1.clear()
+print(dict1)
+
+#Looping through dictionary
+dict1 = {"brand":"Apple","model":"Macbook","year":2023}
+dict1["colour"] = "grey"
+for x in dict1:
+    print(str(x) + "->"+ str(dict1[x]))
+    print()
+for x in dict1.values():
+    print(x)
+for x in dict1.keys():
+    print(x)
+dict2 = dict1.copy()
+print(dict2)
+dict3 = dict(dict1)
+print(dict3)
+info = {"name":{"fname":"JOhn","lname":"Wick"}, "age":54}
+print(info["name"]["fname"] + " "+ info["name"]["lname"])
+
+company = {"emp1":{"id":1,"dep":1}, "emp2":{"id":2,"dep":2}, "emp3":{"id":3,"dep":3}}
+print("id     dep")
+print(str(company["emp1"]["id"]) + "\t" + str(company["emp1"]["dep"]))
+print(str(company["emp2"]["id"]) + "\t" + str(company["emp2"]["dep"]))
+print(str(company["emp3"]["id"]) + "\t" + str(company["emp3"]["dep"]))
+-----------------------------------------------------------------------
+
+**CONDITIONS**
+
+a=33
+b=200
+if b>a:
+    print("b is greater than a")
+elif b ==a:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+    
+if b > a:
+    print("b is greater than a")
+elif b ==a:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+
+if b > a:
+    print("b is greater than a")
+else:
+    print("b is not greater than a")
+
+if a>b: print("a os greater than b")
+    
+print ("A") if a>b else print("B")
+print("A") if a>b else print("=") if a==b else print("B")
+
+a = 200
+b=33
+c=500
+if a>b and c>a:
+    print("Both conditions are true")
+if a>b or a >c:
+    print("Atleast one of the conditions is true")
+if not b>a:
+    print("b is NOT greater than a")
+if b>a:
+    pass
+
+i = 1
+while i<6:
+    print(i)
+    i+=1
+print(i)
+print()
+i=1
+while i <6:
+    print(i)
+    if i==3:
+        break
+    i+=1
+print(i)
+print()
+i=0
+while i<6:
+    i+=1
+    if i==3:
+        continue
+    print(i)
+print()
+i=1
+while i<6:
+    print(i)
+    i +=1
+else:
+    print("i is no longer lesser than 6")
+
+#PROBLEMS
+#Remove duplicate from string
+
+a = "the house the house is on fire fire"
+words = a.split()
+unique = {}
+for word in words:
+    unique[word] = 1
+unique_list = list(unique.keys())
+new_sen= " ".join(unique_list)
+print(new_sen)
+
+print("----------")
+
+#find if a string is symmetrical or palindrome
+
+b = "maam"
+l = len(b)
+b = b.replace(" "," ").lower()
+if b == b[::-1]:
+    print("Palindrome")
+elif l%2==0 and b[:l//2]==b[l//2:]:
+    print("symmetrical")
+else:
+    print("none")
+
+------------------------------------
+
+**LOOPS AND FUNCTIONS**
+
+x="apple"
+for i in x:
+    print(i)
+list1 = ["apple","banana", "cherry", "orange","grapes"]
+list2 = [1,2,3]
+for x in list1:
+    if x=="orange":
+        break
+        print(x)
+for x in list1:
+    if x=="orange":
+        continue
+        print(x)
+for x in range (6):
+    print(x)
+for x in range (2,6):
+    print(x)
+for x in range (1,21,2):
+    print("\t" + str(x))
+for x in range (10,0,-1):
+    print(x)
+for x in range (0,4):
+    print("\t" + str(x))
+else:
+    print("iteration completed")
+for x in list2:
+    for y in list1:
+        print(str(x) + "->" + str(y))
+for x in range(2):
+    pass
+
+def new_function():
+    print("Hello World")
+new_function()
+
+def name(fname):
+    print("First name is:" + fname)
+name("John")
+name("Adam")
+name("Emily")
+
+def name(fname, lname):
+    print("First name is:" +fname + "and the last name is:" + lname)
+name("John", "Mcarthy")
+name("Will", "Brooke")
+
+def name(*arg):
+    print("The names are:")
+    count =1
+    for i in arg:
+        print(str(count) + "->" + i)
+        count+=1
+name("John","Will")
+
+def name(lname, fname, mname):
+ name(fname = "Harry", mname = "James", lname = "Potter")
+
+def name(**name):
+    print(name["fname"]+ ' '+ name["mname"]+" "+name["lname"])
+name(fname = "Harry", mname = "James", lname = "Potter", age = 19, year = 8)
+
+def name (fname = "Adam"):
+    print(fname)
+name("John")
+name()
+name("Will")
+
+def fruits(x):
+    for i in x:
+        print("\t" + i)
+fruits(list1)
+
+def total(price):
+    return price * 1.05
+print(total(100))
+print(total(1000))
+
+def factorial(n):
+    if n==0:
+        return 1
+    else:
+        return (n* factorial(n-1))
+print(factorial(5))
+print(factorial(0))
+
+#PROBLEM
+#Find if number is armstrong
+
+x = int(input("number: "))
+a=str(x)
+b=len(a)
+sum=0
+for y in a:
+    d=int(y)
+    sum +=d **b
+    
+if sum==x:
+    print("Armstrong")
+else:
+    print("not")
+
+--------------------------------------------------------------
+
+**FUNCTION, CLASS**
+
+import math
+x = lambda a:a+10
+print(x(5))
+x= lambda a,b:a*b
+print(x(2,3))
+
+def fun(n):
+    return lambda a : a*n
+trip = fun(3)
+doub = fun(2)
+print(doub(9))
+print(trip (9))
+
+car1 = "BMW"
+car2 = "Mercedes"
+car3 = "Ford"
+car4 = "Volvo"
+
+car = [car1, car2, car3, car4, "Toyota"]
+print(car)
+
+#MATH FUNCTIONS
+a= min(2,6,6,7,3,21,1,0,-2)
+b= max(2,6,6,7,3,21,1,0,-2)
+print(a)
+print(b)
+x = abs(-27.9083)
+print(x)
+x = pow(2,10)
+print(x)
+x = math.sqrt(256)
+print(x)
+print(math.ceil(1.2))
+print(math.floor(1.7))
+print(math.pi)
+
+class MyClass:
+    x = 5
+a = MyClass()
+print(a.x)
+
+class Person:
+    def __init__ (self,name,age):
+        self.name = name
+        self.age = age
+        
+p1 = Person("John",40)
+print(p1.name + " " + str(p1.age))
+p2 = Person("Will", 26)
+print(p2.name + " " + str(p2.age))
+print(p1)
+
+class Person:
+    def __init__ (self,name,age):
+        self.name = name
+        self.age = age
+        
+    def __str__(self):
+        return f"{self.name}({self.age})"
+p1 = Person("John", 40)
+p2 = Person("Will", 26)
+print(p1)
+print(p2)
+
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        
+    def saymyname(self):
+        print("Hello my name is" +" "+self.name + " " +"and my age is " + str(self.age)+"!!!")
+print("---------------------------------------")
+        
+p1 = Person("John",40)
+p1.age = 30
+p1.saymyname()
+p2 = Person("Will",26)
+p2.saymyname()
+
+print("---------------------------------------")
+class Person:
+    def __init__ (abc,name,age):
+        abc.name = name
+        abc.age = age
+    def saymyname(de):
+        print("Hello my name is" + de.name + "and my age is" + str(de.age) + "!!!")
+        
+p1 = Person("John", 40)
+p1.age = 30
+p1.saymyname()
+p2 = Person("Will",26)
+p2.saymyname()
+
+print("-----------------------------------")
+
+del p1.age
+del p1
+
+#PROBLEM
+
+a= [10,20,30,40,50]
+p1=1
+p2=4
+
+if 0<=p1<len(a) and 0<=p2<len(a):
+    temp=a[p1]
+    a[p1] = a[p2]
+    a[p2]=temp
+    
+    print("New List:" + str(a))
+else:
+    print("Invalid position numbers")
+    
+print("---------------------------------")
+
+P = float(input("Enter Principal"))
+r = float(input("Enter rate"))
+t = int(input("Enter years"))
+
+A= P*(1+r/100)*t
+CI = A-P
+
+print(f"CI:{CI: .2f}")
+print(f"Total Amount after {t} years: {A: .2f}")
+
+#PROBLEM : Reverse a list from position that user specifies
+
+a= [1,2,3,4,5,6,7,8]
+p1 = int(input("Enter position1"))
+p2 = int(input("Enter position2"))
+
+if 0<=p1<len(a) and 0<=p2<len(a) and p1<=p2:
+    a[p1:p2+1] = a[p1:p2 +1][::-1]
+    print(a)
+else:
+    print("invalid position")
+    
+print("-----------------------------")
+
+#PROBLEM: Find the kth largest number
+
+b=[12,45,2,8,6]
+k=int(input("kth largest number"))
+if 1 <=k<=len(b):
+    b.sort(reverse=True)
+    kth_largest = b[k-1]
+    print(kth_largest)
+else:
+    print("invalid k value")
+
+print("--------------------------------")
+
+#PROBLEM: remove duplicates from a list while preserving the order
+
+#SOLUTION1
+c=[10,20,30,20,40,50]
+unique = []
+for d in c:
+    if d not in unique:
+        unique.append(d)
+print(unique)
+
+#SOLUTION2
+def dup(c):
+    unique = []
+    for x in c:
+        if x not in unique:
+            unique.append(x)
+    return unique
+c = [10,30,20,20,40,10,50]
+d = dup(c)
+print(d)
+
+print("-----------------------------------")\
+
+#PROBLEM: WAP in python a function to find union and intersection of 2 lists
+
+#SOL1
+def ui(p,q):
+    union = list(set(p) | set(q))
+    intersection = list(set(p)& set(q))
+    return union, intersection
+p=[1,2,3,4,5]
+q=[3,4,5,6,7]
+o_union,o_intersection = ui(p,q)
+print(o_union)
+print(o_intersection)
+
+#SOL2
+def union(p,q):
+    union=[]
+    for x in p:
+        if x not in union:
+            union.append(x)
+    for x in q:
+        if x not in union:
+            union.append(x)
+    return union
+def intersection(p,q):
+    intersection = []
+    for y in p:
+        if y in q and y not in intersection:
+            intersection.append(y)
+    return intersection
+p=[1,2,3,4,5]
+q=[3,4,5,6,7]
+r_u=union(p,q)
+r_i=intersection(p,q)
+print(r_u)
+print(r_i)
+
+print("-------------------------------------")
+
+#PROBLEM: WAP in python to find the first nonrepeated element in a list
+def find(x):
+    for y in x:
+        if x.count(y) == 1:
+            return y
+    return None
+x = [1,2,3,4,1,2,3,5]
+z = find(x)
+if z is not None:
+    print("First nonrepeat element:",z)
+else:
+    print("No nonrepeat element present")
+-----------------------------------------------------------------------
+
+**ERRORS AND EXCEPTIONS**
+
+try:
+	f = open('testfile','w')
+	f.write('Test write this')
+except IOError:
+	#This will only check for an IOError exception and then execute this print statement
+	print("Error: Could not find file or read data")
+else:
+	print("Content written successfully")
+	f.close()
+
+
+try:
+	f = open('testfile','r')
+	f.write('Test write this')
+except IOError:
+	#This will only check for an IOError exception and then execute this print statement
+	print("Error: Could not find file or read data")
+else:
+	print("Content written successfully")
+	f.close()
+
+
+try:
+	f = open('testfile','r')
+	f.write('Test write this')
+except IOError:
+	#This will only check for any exception and then execute this print statement
+	print("Error: Could not find file or read data")
+else:
+	print("Content written successfully")
+	f.close()
+
+
+try:
+	f = open("testfile","w")
+	f.write('Test write statement')
+	f.close()
+finally:
+	print("Always execute finally code blocks")
+
+
+def askint():
+	try:
+	   val = int(input("Please enter an integer: "))
+	except:
+	   print("Looks like you did not enter an integer!")
+	finally:
+	   print("Finally, I executed!")
+	print(val)
+askint()
+
+
+def askint():
+      while True:
+	try:
+	   val = int(input("Please enter an integer: "))
+	except:
+	   print("Looks like you did not enter an integer!")
+	   continue
+	else:
+	   print("Yep that's an integer!")
+	   break
+	finally:
+	   print("Finally, I executed!")
+	print(val)
+askint()
+
+
+def askint():
+      while True:
+	try:
+	   val = int(input("Please enter an integer: "))
+	except:
+	   print("Looks like you did not enter an integer!")
+	   continue
+	else:
+	   print("Yep that's an integer!")
+	   print(val)
+	   break
+	finally:
+	   print("Finally, I executed!")
+askint()
+
+#PROBLEMS
+#1
+for i in ['a','b','c']:
+    try:
+        print(i**2)
+    except TypeError as e:
+        print("Error here")
+
+#2
+
+x=5
+y=0
+try:
+    z=x/y
+except ZeroDivisionError as e:
+    print("Can't Divide by Zero")
+finally:
+    print("All Done")
+
+#3
+
+def ask():
+    while True:
+        try:
+            a=input("Input an integer: ")
+            b=int(a)
+            sq=b**2
+            print(f"Thank you! Your number squared is: {sq}")
+            break
+        except ValueError:
+            print("An Error Occured! Please try again!")
+        else:
+            print("Valid")
+ask()
+----------------------------------------------------------------------
+**CSV CONCEPTS**
+
+import csv
+
+data = open('example.csv')
+csv_data = csv.reader(data)
+data_lines = list(csv_data)
+
+data= open('example.csv',encoding="utf-8")
+csv_data = csv.reader(data)
+data_lines = list(csv_data)
+data_lines[::3]
+for line in data_lines[:5]:
+	print(line)
+len(data_lines)
+all_emails = []
+for line in data_lines[1:15]:
+	all_emails.append(line[3])
+print(all_emails)
+
+full_names = []
+
+for line in data_lines[1:15]:
+	full_names.append(line[1]+' '+line[2])
+full_names
+
+# newline controls how universal newlines works (it only applies to text
+# mode). It can be None, '','\n','\r', and '\r\n'.
+file_to_output = open('to_save_File.csv','w',newline='')
+csv_writer = csv.writer(file_to_output,delimiter=',')
+csv_writer.writerow(['a','b','c'])
+csv_writer.writerows([['1','2','3'],['4','5','6']])
+file_to_output.close()
+
+f = open('to_save_file.csv','a',newline='')
+csv_writer = csv.writer(f)
+csv_writer.writerow(['new','new','new'])
+f.close()
+
+OR SIMPLY, TRY
+
+import csv
+data = open('example.csv',encoding = "utf-8")
+csv_data = csv.reader(data)
+data_lines=list(csv_data)
+for line in data_lines[1:10]:
+        print(line)
+------------------------------------------------------------------------
+**PDF CONCEPTS**
+
+#note the capitalization
+import PyPDF2
+
+#notice we read it as a binary with 'rb'
+f=open('Working_Business_Proposal.pdf','rb')
+pdf_reader = PyPDF2.PdfFileReader(f)
+pdf_reader.numPages
+page_one = pdf_reader.getPage(0)
+page_one_text = page_one.extractText()
+page_one_text
+f.close()
+
+f=open('Working_Business_Proposal.pdf','rb')
+pdf_reader = PyPDF2.PdfFileReader(f)
+first_page = pdf_reader.getPage(0)
+pdf_writer = PyPDF2.PdfFileWriter()
+pdf_writer.addPage(first_page)
+pdf_output = open("Some_New_Doc.pdf","wb")
+pdf_writer.write(pdf_output)
+f.close()
+
+f=open('Working_Business_Proposal.pdf','rb')
+
+#List of every page's text
+#The index will correspond to page number.
+pdf_text=[]
+
+pdf_reader = PyPDF2.PdfFileReader(f)
+
+for p in range(pdf_reader.numPages):
+    page = pdf_reader.getPage(p)
+    pdf_text.append(page.extractText())
+
+pdf_text
+
+print(pdf_text[3])
+
+
+
+ERROR:
+import csv
+import requests
+import PyPDF2
+import re
+
+with open('find_the_link.csv','r')as csvfile:
+    csvreader = csv.reader(csvfile)
+    for row in csvreader:
+        gdl = row[0]
+        break
+
+potentiallinks = re.findall(r'https?://[^\s]+',gdl)
+
+gdrivelink = None
+for link in potentiallinks:
+    if "drive.google.com" in link:
+        gdrivelink = link
+        break
+
+if gdrivelink is None:
+    print("No valid link")
+else:
+
+    response = requests.get(gdl)
+    with open('downloaded.pdf','wb') as pdf_file:
+        pdf_file.write(response.content)
+
+
+    pdf_file = open('downloaded.pdf','rb')
+    pdf_reader = PyPDF2.PdfFileReader(pdf_file)
+    page_number = 14
+    page=pdf.reader.getPage(page_number - 1)
+    pdf_text = page.extractText()
+    pdf_file.close()
+
+    phone_num_pattern = r'\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b'
+    ph_nos = re.findall(phone_num_pattern,pdf_text)
+    if ph_nos:
+        print("Number found: ")
+        for ph_no in ph_nos:
+           print(ph_no)
+    else:
+        print("No number found")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#1
+binary= bin(1024)
+hexadecimal = hex(1024)
+
+print(binary)
+print(hexadecimal)
+
+#2
+print(round(5.23222,2))
+
+#3
+s='hello how are you Mary, are you feeling okay?'
+
+if s.islower():
+    print("all letters low")
+else:
+    print("not all low")
+
+#4
+s = 'twywywtwywbwhsjhwuwshshwuwwwjdjdid'
+
+count = s.count('w')
+print(f"w appears {count} times")
+
+#5
+set1={2,3,1,5,6,8}
+set2={3,1,7,5,6,8}
+
+res=set1.difference(set2)
+print(res)
+
+#6
+set1={2,3,1,5,6,8}
+set2={3,1,7,5,6,8}
+
+res=set1.union(set2)
+print(res)
+
+#7
+dict={x:x**3 for x in range(5)}
+print(dict)
+
+#8
+a=[1,2,3,4]
+print(a[::-1])
+
+#9
+a=[3,4,2,5,1]
+a.sort()
+print(a)
+
+#n1
+import math
+def sphere(r):
+    return (4/3)* math.pi * (r**3)
+r=float(input("Enter radius: "))
+sp_vol = sphere(r)
+print(f"Volume of sphere is: {sp_vol:.2f}")
+   
+#n2
+def range(n,l,h):
+    return l<=n<=h
+l=int(input("Enter low number: "))
+h=int(input("enter high no: "))
+
+check = float(input("Enter number to check: "))
+if range(check,l,h):
+    print("yes")
+else:
+    print("no")
+
+#n3
+def countlu(string):
+    upper=0
+    lower=0
+    for char in string:
+        if char.isupper():
+            upper+=1
+        elif char.islower():
+            lower+=1
+    return upper, lower
+
+s=input("Enter a string: ")
+upper, lower = countlu(s)
+print("upper count:", upper)
+print("lower count:", lower)
+
+#n4
+def list(n):
+    prod=1
+    for x in n:
+        prod *=x
+    return prod
+a=[1,2,3,4,5,6,7]
+product=list(a)
+print(product)
+
+#n5
+import string
+def pangram(s1):
+    al = set(string.ascii_lowercase)
+    clean_str = ''.join(char for char in s1.lower() if char.isalpha())
+    return set(clean_str) == al
+
+s1 = input("Enter string: ")
+if pangram(s1):
+    print("Yes")
+else:
+    print("No")
